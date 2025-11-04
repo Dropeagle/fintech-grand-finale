@@ -1,0 +1,337 @@
+{
+  "backend": {
+    "java_file_count": 31,
+    "entities_found": {
+      "Conta": [
+        [
+          "Long",
+          "idConta"
+        ],
+        [
+          "String",
+          "numeroConta"
+        ],
+        [
+          "String",
+          "tipoConta"
+        ],
+        [
+          "String",
+          "banco"
+        ],
+        [
+          "String",
+          "agencia"
+        ],
+        [
+          "LocalDate",
+          "dataAbertura"
+        ],
+        [
+          "Usuario",
+          "usuario"
+        ]
+      ],
+      "Despesa": [
+        [
+          "Long",
+          "idDespesa"
+        ],
+        [
+          "String",
+          "tipoDespesa"
+        ],
+        [
+          "String",
+          "nomeDespesa"
+        ],
+        [
+          "Double",
+          "valor"
+        ],
+        [
+          "LocalDate",
+          "dataGasto"
+        ],
+        [
+          "Conta",
+          "conta"
+        ]
+      ],
+      "Investimento": [
+        [
+          "Long",
+          "idInvestimento"
+        ],
+        [
+          "String",
+          "nomeInvestimento"
+        ],
+        [
+          "String",
+          "tipoInvestimento"
+        ],
+        [
+          "double",
+          "valor"
+        ],
+        [
+          "double",
+          "rentabilidade"
+        ],
+        [
+          "LocalDate",
+          "dataRetiradaAplicacao"
+        ],
+        [
+          "double",
+          "valorAtual"
+        ],
+        [
+          "LocalDate",
+          "dataAplicacao"
+        ],
+        [
+          "String",
+          "nomeInstituicao"
+        ],
+        [
+          "Conta",
+          "conta"
+        ]
+      ],
+      "MetaFinanceira": [
+        [
+          "Long",
+          "idMetaFinanceira"
+        ],
+        [
+          "String",
+          "nomeMetaFinanceira"
+        ],
+        [
+          "String",
+          "tipoMetaFinanceira"
+        ],
+        [
+          "String",
+          "descricao"
+        ],
+        [
+          "double",
+          "valorObjetivo"
+        ],
+        [
+          "double",
+          "valorAtual"
+        ],
+        [
+          "LocalDate",
+          "dataCriacao"
+        ],
+        [
+          "LocalDate",
+          "dataConclusao"
+        ],
+        [
+          "Conta",
+          "conta"
+        ]
+      ],
+      "Orcamento": [
+        [
+          "Long",
+          "idOrcamento"
+        ],
+        [
+          "String",
+          "nomeOrcamento"
+        ],
+        [
+          "String",
+          "tipoOrcamento"
+        ],
+        [
+          "double",
+          "valorOrcamento"
+        ],
+        [
+          "LocalDate",
+          "dataInicio"
+        ],
+        [
+          "LocalDate",
+          "dataFim"
+        ],
+        [
+          "Conta",
+          "conta"
+        ]
+      ],
+      "Receita": [
+        [
+          "Long",
+          "idReceita"
+        ],
+        [
+          "double",
+          "valorReceita"
+        ],
+        [
+          "String",
+          "tipoReceita"
+        ],
+        [
+          "String",
+          "descricao"
+        ],
+        [
+          "LocalDate",
+          "dataEmissao"
+        ],
+        [
+          "Conta",
+          "conta"
+        ]
+      ],
+      "Usuario": [
+        [
+          "Long",
+          "idUsuario"
+        ],
+        [
+          "String",
+          "nome"
+        ],
+        [
+          "LocalDate",
+          "dataNasc"
+        ],
+        [
+          "String",
+          "genero"
+        ],
+        [
+          "String",
+          "telefone"
+        ],
+        [
+          "String",
+          "email"
+        ],
+        [
+          "String",
+          "perfilFinanceiro"
+        ],
+        [
+          "String",
+          "status"
+        ],
+        [
+          "LocalDate",
+          "dataUltimoLogin"
+        ],
+        [
+          "String",
+          "senha"
+        ]
+      ]
+    },
+    "controllers_found": {
+      "ContaController": {
+        "base": "/api",
+        "endpoints": [],
+        "file": "/mnt/data/backend_work/grand-finale-master/src/main/java/br/com/fiap/controller/ContaController.java"
+      },
+      "DespesaController": {
+        "base": "/api",
+        "endpoints": [],
+        "file": "/mnt/data/backend_work/grand-finale-master/src/main/java/br/com/fiap/controller/DespesaController.java"
+      },
+      "InvestimentoController": {
+        "base": "/api",
+        "endpoints": [],
+        "file": "/mnt/data/backend_work/grand-finale-master/src/main/java/br/com/fiap/controller/InvestimentoController.java"
+      },
+      "MetaFinanceiraController": {
+        "base": "/api",
+        "endpoints": [],
+        "file": "/mnt/data/backend_work/grand-finale-master/src/main/java/br/com/fiap/controller/MetaFinanceiraController.java"
+      },
+      "OrcamentoController": {
+        "base": "/api",
+        "endpoints": [],
+        "file": "/mnt/data/backend_work/grand-finale-master/src/main/java/br/com/fiap/controller/OrcamentoController.java"
+      },
+      "ReceitaController": {
+        "base": "/api",
+        "endpoints": [],
+        "file": "/mnt/data/backend_work/grand-finale-master/src/main/java/br/com/fiap/controller/ReceitaController.java"
+      },
+      "UsuarioController": {
+        "base": "/api",
+        "endpoints": [],
+        "file": "/mnt/data/backend_work/grand-finale-master/src/main/java/br/com/fiap/controller/UsuarioController.java"
+      }
+    }
+  },
+  "frontend": {
+    "frontend_files_count": 1897,
+    "resources_used": {
+      "despesa": [
+        "src/pages/Despesa/DespesaList.jsx",
+        "src/pages/Despesa/DespesaForm.jsx"
+      ],
+      "conta": [
+        "src/pages/Conta/ContaList.jsx",
+        "src/pages/Conta/ContaForm.jsx"
+      ],
+      "usuario": [
+        "src/pages/Usuario/UsuarioList.jsx",
+        "src/pages/Usuario/UsuarioForm.jsx"
+      ]
+    },
+    "sample_frontend_files": [
+      "/mnt/data/frontend_work/package.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/package-lock.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/package.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/vite.config.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.package-lock.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/_metadata.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/axios.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/chunk-DRWLMN53.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/chunk-G3PMV62Z.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/chunk-PJEEZAML.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/package.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/react-dom.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/react-dom_client.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/react-router-dom.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/react.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/react_jsx-dev-runtime.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/.vite/deps/react_jsx-runtime.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/code-frame/package.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/code-frame/lib/index.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/corejs2-built-ins.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/corejs3-shipped-proposals.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/native-modules.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/overlapping-plugins.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/package.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/plugin-bugfixes.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/plugins.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/data/corejs2-built-ins.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/data/corejs3-shipped-proposals.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/data/native-modules.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/data/overlapping-plugins.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/data/plugin-bugfixes.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/compat-data/data/plugins.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/package.json",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/lib/index.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/lib/parse.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/lib/transform-ast.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/lib/transform-file-browser.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/lib/transform-file.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/lib/transform.js",
+      "/mnt/data/frontend_work/fintech-grand-finale-main/fintech-frontend/node_modules/@babel/core/lib/config/cache-contexts.js"
+    ]
+  }
+}

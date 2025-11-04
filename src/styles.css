@@ -1,0 +1,11 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; }
+.app { display:flex; flex-direction:column; min-height:100vh; }
+.nav { background:#0b63a3; color:white; padding:10px; }
+.nav a { color:white; margin-right:10px; text-decoration:none; }
+.main { padding:20px; flex:1; }
+.table { width:100%; border-collapse:collapse; }
+.table th, .table td { border:1px solid #ddd; padding:8px; }
+.form-row { margin-bottom:10px; }
+.btn { padding:8px 12px; margin-right:6px; cursor:pointer; }
+.btn-danger { background:#c0392b; color:white; border:none; }
+.btn-primary { background:#2980b9; color:white; border:none; }
